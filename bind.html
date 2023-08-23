@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+
+<script>
+const person = {
+  firstName:"devanshu",
+  lastName: "kumawat",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person1 = {
+  firstName:"chinki",
+  lastName: "dayma",
+}
+
+let fullName = person.fullName.bind(person1);
+
+document.getElementById("d1").innerHTML = fullName();
+</script>
+</body>
+</html>

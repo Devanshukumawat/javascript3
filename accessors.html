@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+
+    <script>
+        const person = {
+            name: "Devanshu",
+            age : 24,
+            get add(){
+                return this.age;
+            }
+        };
+        document.getElementById('d1').innerHTML="Age = "+ person.add
+    </script>
+
+    <p id="d2"></p>
+
+<script>
+
+const per = {
+  firstName: "Devanshu",
+  lastName: "kumawat",
+  language: "NO",
+  set lang(value) {
+    this.language = value;
+  }
+};
+
+per.lang = "English";
+
+document.getElementById("d2").innerHTML ="Language = "+ per.language;
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="d1"></p>
+
+<script>
+
+function myFunction(a, b) {
+  return a * b;
+}
+
+
+let x = myFunction(4, 3);
+document.getElementById("d1").innerHTML = x;
+
+
+</script>
+
+
+<p id="d2"></p>
+
+<script>
+const dev = function (a, b) {return a * b};
+document.getElementById("d2").innerHTML = dev;
+</script>
+
+<p id="d3"></p>
+
+<script>
+const myFunction = new Function("a", "b", "return a * b");
+document.getElementById("d3").innerHTML = myFunction(4, 3);
+</script>
+
+<p id="d4"></p>
+
+<script>
+(function () {
+  document.getElementById("d4").innerHTML = "Hello! I called myself";
+})();
+</script>
+
+
+</body>
+</html>
